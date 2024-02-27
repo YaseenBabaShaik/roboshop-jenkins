@@ -1,9 +1,10 @@
-- name: Create a jenkins job using basic authentication
-  ansible.builtin.tempelate:
-  src:job.xml
+- name: Create 
+  ansible.builtin.template:
+  src: job.xml
+  dest: /tmp/job.xml
 
--name: Create
- community.general.jenkins_job:
+- name: Create
+  community.general.jenkins_job:
     config: "{{ lookup('file', 'templates/test.xml') }}"
     name: test
     url: http://localhost:8080
