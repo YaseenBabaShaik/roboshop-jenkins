@@ -1,5 +1,5 @@
 ---
-- name: Create jenkins jobs
+- name: Create
   hosts: localhost
   connection: local
   roles: jenkins
