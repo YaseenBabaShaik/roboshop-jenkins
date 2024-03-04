@@ -1,7 +1,7 @@
-- name: Create 
+- name: Create config file
   ansible.builtin.template:
-  src: job.xml
-  dest: /tmp/job.xml
+   src: job.xml
+   dest: /tmp/job.xml
 
 - name: Create
   community.general.jenkins_job:
@@ -12,6 +12,4 @@
     password: "{{jenkins_password}}"
 
     loop:
-     -frontend
-     -cart
      -catalogue
