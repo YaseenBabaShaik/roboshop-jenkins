@@ -11,5 +11,5 @@
     user: admin
     password: "{{jenkins_password}}"
 
-    loop:
-     -catalogue
+  loop:
+    -catalogue
