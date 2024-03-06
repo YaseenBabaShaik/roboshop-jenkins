@@ -12,4 +12,5 @@
     password: "{{jenkins_password}}"
 
   loop:
+    -frontend
     -catalogue
